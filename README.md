@@ -62,12 +62,8 @@ _"'start': 'npm run build; webpack-dev-server --open --mode development',"_
 
 ### Technologies Used
 
- - JavaScript/jQuery
- - Webpack Plugins
- - API
- - Jest
- - HTML5
- - CSS3/Bootstrap/SCSS
+ - Ruby/Rails
+ - Test Driven Development
 
 - - - -
 ### Support and Contact
