@@ -10,5 +10,5 @@ word = Word.new(word)
 puts "Enter another word: "
 word2 = gets.chomp
 puts "____________________"
-puts word.anagram_detector(word2)
+puts word.vowel_check(word2)
 puts "____________________"
