@@ -13,27 +13,27 @@ class Word
   
     def vowel_check(word2)
       word1 = @word.split('')
-      puts word1
-      puts " "
       word2 = word2.split('')
-      puts word2
-      puts " "
       counter = 0 
       word1.each do |letter |
         @vowels.each do |key, value|
           if letter =~ value
             counter +=1
-            # else
-            #   puts "Word1 does not contain #{value}"
           end
         end
       end
-      puts counter
+      counter
+      if counter > 0
+        word2 = word2.sort().join('')
+        anagram_detector(word2)
+      else
+        puts "That's not a word!"
+        false
+      end
    end
 
   def anagram_detector(word2)
     word2 = word2.downcase().gsub(" ", "").split('').sort().join('')
-    vowel_check(word2)
     if @word == word2
       puts "Anagram match!"
       true
