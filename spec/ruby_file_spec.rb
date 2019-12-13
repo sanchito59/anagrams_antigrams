@@ -29,4 +29,9 @@ describe('#anagram_detector') do
         word2 = "OLD WEST ACTION"
         expect(word.anagram_detector(word2)).to(eq(true))
     end
+    it('will detect whether the inputs are words') do
+        word = Word.new('ymy')
+        word2 = "hello"
+        expect(word.anagram_detector(word2)).to(eq(false))
+    end
 end
