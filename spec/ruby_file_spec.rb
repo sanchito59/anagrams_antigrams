@@ -15,8 +15,13 @@ describe('#anagram_detector') do
     #     word = Word.new("HiPpO")
     #     expect(word.anagram_detector()).to(eq(["h", "i", "o", "p", "p"]))
     # end
-    it('will join the sorted array into a new word') do
-        word = Word.new("HiPpO")
-        expect(word.anagram_detector()).to(eq('hiopp'))
+    # it('will join the sorted array into a new word') do
+    #     word = Word.new("HiPpO")
+    #     expect(word.anagram_detector()).to(eq('hiopp'))
+    # end
+    it('will detect whether two words are anagrams or not') do
+        word = Word.new('tEa')
+        word2 = "EAT"
+        expect(word.anagram_detector(word2)).to(eq(false))
     end
 end
