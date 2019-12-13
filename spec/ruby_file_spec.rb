@@ -19,19 +19,19 @@ describe('#anagram_detector') do
     #     word = Word.new("HiPpO")
     #     expect(word.anagram_detector()).to(eq('hiopp'))
     # end
-    it('will detect whether two words are anagrams or not') do
-        word = Word.new('tEa')
-        word2 = "EAT"
-        expect(word.anagram_detector(word2)).to(eq(true))
-    end
     it('will detect whether a phrase or word is an anagram') do
         word = Word.new("CLint EASTwoOD")
         word2 = "OLD WEST ACTION"
-        expect(word.anagram_detector(word2)).to(eq(true))
+        expect(word.anagram_detector(word2)).to(eq("Anagram match!"))
     end
     it('will detect whether the inputs are words') do
         word = Word.new('mjk')
         word2 = "hello"
-        expect(word.vowel_check(word2)).to(eq(false))
+        expect(word.vowel_check(word2)).to(eq("That wasn't a word!"))
+    end
+    it('will detect whether two words are anagrams or not') do
+        word = Word.new('tEa')
+        word2 = "EAT"
+        expect(word.anagram_detector(word2)).to(eq("Anagram match!"))
     end
 end
