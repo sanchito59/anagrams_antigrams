@@ -49,20 +49,9 @@ class Word
   def anagram_detector(word2)
     anti1 = @word.split('')
     anti2 = word2.downcase().gsub(@special_char, "").split('')
-    word1_char_count = antigrams_hash(anti1)
-    word2_char_count = antigrams_hash(anti2)
-    puts word1_char_count
-    puts word2_char_count
-    puts " --- "
-    puts " --- "
-    puts word1_char_count.keys()
-    word1_keys = word1_char_count.keys()
-    puts " --- "
-    puts word2_char_count.keys()
-    word2_keys = word2_char_count.keys()
+    word1_keys = antigrams_hash(anti1).keys()
+    word2_keys = antigrams_hash(anti2).keys()
     matching_char = word1_keys & word2_keys
-    puts " - - - - - "
-    
     word2 = word2.downcase().gsub(@special_char, "").split('').sort().join('')
     if @word == word2
       "Anagram match!"
