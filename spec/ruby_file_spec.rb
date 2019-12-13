@@ -39,4 +39,9 @@ describe('#anagram_detector') do
         arr = ['t', 'e', 'a']
         expect(word.antigrams_hash(arr)).to(eq({"t"=>1, "e"=>1, "a"=>1}))
     end
+    it('will detect whether or not words are antigrams') do
+        word = Word.new('hi')
+        word2 = 'bye'
+        expect(word.anagram_detector(word2)).to(eq(true))
+    end
 end
