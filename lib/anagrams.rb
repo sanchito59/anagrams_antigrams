@@ -1,6 +1,7 @@
 class Word
   def initialize(str)
-    @word = str.downcase().gsub(" ", "").split('').sort().join('')
+    @special_char = /[!@#$%^&*()_+?<>"':{}|\~` ]/
+    @word = str.downcase().gsub(@special_char, "").split('').sort().join('')
     @vowels = {
       'a' => /[a]/,
       'e' => /[e]/,
@@ -41,7 +42,7 @@ class Word
    end
 
   def anagram_detector(word2)
-    word2 = word2.downcase().gsub(" ", "").split('').sort().join('')
+    word2 = word2.downcase().gsub(@special_char, "").split('').sort().join('')
     if @word == word2
       "Anagram match!"
     else 
