@@ -53,15 +53,15 @@ class Word
     word2_keys = antigrams_hash(anti2).keys()
     matching_char = word1_keys & word2_keys
     word2 = word2.downcase().gsub(@special_char, "").split('').sort().join('')
+    if matching_char.empty? != true
+      puts "There are matching characters!"
+    else
+      puts "No matching characters- this is an antigram!"
+    end
     if @word == word2
       "Anagram match!"
     else 
       "Not an anagram!"
-    end
-    if matching_char.empty? != true
-      "There are matching characters!"
-    else
-      "No matching characters- this is an antigram!"
     end
   end
 end
