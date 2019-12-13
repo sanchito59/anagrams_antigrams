@@ -3,10 +3,6 @@ class Word
     @word = str
   end
 
-  # def word2(str2)
-  #   @word2 = str2
-  # end
-
   def anagram_detector(word2)
     word1 = @word.downcase().split('').sort().join('')
     word2 = word2.downcase().split('').sort().join('')

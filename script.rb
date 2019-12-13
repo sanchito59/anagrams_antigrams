@@ -1,9 +1,7 @@
 #!/usr/bin/env ruby
 require('./lib/anagrams.rb')
 
-puts "
-- ANAGRAM DETECTOR - 
-"
+puts "- ANAGRAM DETECTOR -"
 puts "____________________"
 puts " "
 puts "Enter a word: "
