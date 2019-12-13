@@ -3,8 +3,12 @@ require('pry')
 require('anagrams')
 
 describe('#anagram_detector') do
-    word1 = Word.new("hippo")
-    it('will lowercase all inputted words') do
-    expect(word1.anagram_detector()).to(eq("hippo"))
+    # it('will lowercase all inputted words') do
+    # word1 = Word.new("hippo")
+    # expect(word1.anagram_detector()).to(eq("hippo"))
+    # end
+    it('will split a word into an array') do
+        word = Word.new("HiPpO")
+        expect(word.anagram_detector()).to(eq(["h", "i", "p", "p", "o"]))
     end
 end
