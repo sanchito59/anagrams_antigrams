@@ -4,8 +4,8 @@ class Word
   end
 
   def anagram_detector(word2)
-    word1 = @word.downcase().split('').sort().join('')
-    word2 = word2.downcase().split('').sort().join('')
+    word1 = @word.downcase().gsub(" ", "").split('').sort().join('')
+    word2 = word2.downcase().gsub(" ", "").split('').sort().join('')
     if word1 == word2
       puts "Anagram match!"
       true
