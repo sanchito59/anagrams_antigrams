@@ -42,22 +42,13 @@ _"'start': 'npm run build; webpack-dev-server --open --mode development',"_
 
 ### Specifications:
 
-|Symbol| Value  |
-|---|---|
-|a|0|
-|b|1|
-|c|2|
-|d|3|
-|c|4|
-|d|5|
-|e|6|
-
-|Input|Output|
-|---|---|
-|input|return false|
-|input1|output1|
-|input2|output2|
-|input3|output3|
+|Behavior|Input|Output|
+|---|---|---|
+|Check if two words are anagrams.|'elvis', 'lives'|Anagram match!|
+|Account for words entered with different cases.|'lIstEN', 'sILEnT'|Anagram Match!|
+|Check whether an input is a word or not. |'yrrb'|That's not a word!|
+|Check whether words are antigrams, i.e. no matching letters. |'hi', 'bye'|Not a single letter matches!|
+|Account for multiple words being anagrams or antigrams.|'Clint Eastwood', 'Old West Action'|Anagram Match!|
 - - - -
 
 ### Technologies Used
