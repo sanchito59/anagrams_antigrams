@@ -15,6 +15,7 @@ class Word
       word1 = @word.split('')
       word2 = word2.split('')
       counter = 0 
+      counter2 = 0 
       word1.each do |letter |
         @vowels.each do |key, value|
           if letter =~ value
@@ -23,12 +24,22 @@ class Word
         end
       end
       counter
-      if counter > 0
+      word2.each do |letter |
+        @vowels.each do |key, value|
+          if letter =~ value
+            counter2 +=1
+          end
+        end
+      end
+      counter2
+      # puts counter
+      # puts counter2
+      if counter > 0 && counter2 > 0
         word2 = word2.sort().join('')
         anagram_detector(word2)
       else
-        puts "That's not a word!"
-        false
+        puts "That wasn't a word!"
+        # false
       end
    end
 
