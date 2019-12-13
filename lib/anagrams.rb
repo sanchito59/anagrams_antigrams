@@ -32,25 +32,20 @@ class Word
         end
       end
       counter2
-      # puts counter
-      # puts counter2
       if counter > 0 && counter2 > 0
         word2 = word2.sort().join('')
         anagram_detector(word2)
       else
-        puts "That wasn't a word!"
-        # false
+        "That wasn't a word!"
       end
    end
 
   def anagram_detector(word2)
     word2 = word2.downcase().gsub(" ", "").split('').sort().join('')
     if @word == word2
-      puts "Anagram match!"
-      true
+      "Anagram match!"
     else 
-      puts "Not an anagram!"
-      false
+      "Not an anagram!"
     end
   end
 end
