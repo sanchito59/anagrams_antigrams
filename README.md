@@ -47,7 +47,7 @@ _"'start': 'npm run build; webpack-dev-server --open --mode development',"_
 |Check if two words are anagrams.|'elvis', 'lives'|Anagram match!|
 |Account for words entered with different cases.|'lIstEN', 'sILEnT'|Anagram match!|
 |Check whether an input is a word or not. |'yrrb'|That wasn't a word!|
-|Check whether words are antigrams, i.e. no matching letters. |'hi', 'bye'|Not a single letter matches!|
+|Check whether words are antigrams, i.e. no matching letters. |'hi', 'bye'|No matching characters- this is an antigram!|
 |Account for multiple words being anagrams or antigrams.|'Clint Eastwood', 'Old West Action'|Anagram Match!|
 - - - -
 
