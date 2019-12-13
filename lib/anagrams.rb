@@ -4,7 +4,7 @@ class Word
   end
 
   def anagram_detector
-    @word.lowercase()
+    @word.downcase()
   end
 end
 
