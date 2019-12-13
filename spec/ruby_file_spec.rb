@@ -42,6 +42,6 @@ describe('#anagram_detector') do
     it('will detect whether or not words are antigrams') do
         word = Word.new('hi')
         word2 = 'bye'
-        expect(word.anagram_detector(word2)).to(eq("No matching characters- this is an antigram!"))
+        expect(word.anagram_detector(word2)).to(eq("Not an anagram!"))
     end
 end
