@@ -51,23 +51,28 @@ class Word
     anti2 = word2.downcase().gsub(@special_char, "").split('')
     word1_char_count = antigrams_hash(anti1)
     word2_char_count = antigrams_hash(anti2)
-    puts antigrams_hash(['t','e','a'])
-
+    puts word1_char_count
+    puts word2_char_count
+    puts " --- "
+    puts " --- "
+    puts word1_char_count.keys()
+    word1_keys = word1_char_count.keys()
+    puts " --- "
+    puts word2_char_count.keys()
+    word2_keys = word2_char_count.keys()
+    matching_char = word1_keys & word2_keys
+    puts " - - - - - "
+    
     word2 = word2.downcase().gsub(@special_char, "").split('').sort().join('')
     if @word == word2
       "Anagram match!"
     else 
       "Not an anagram!"
     end
-    puts word1_char_count
-    puts word2_char_count
-    puts " --- "
-    puts " --- "
-    puts word1_char_count.keys()
-    puts " --- "
-    puts word2_char_count.keys()
-    if word1_char_count == word2_char_count
-      puts "Not a single letter matches!"
+    if matching_char.empty? != true
+      "There are matching characters!"
+    else
+      "No matching characters- this is an antigram!"
     end
   end
 end
