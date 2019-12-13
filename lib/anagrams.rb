@@ -4,7 +4,7 @@ class Word
   end
 
   def anagram_detector
-    @word.downcase().split('')
+    @word.downcase().split('').sort()
   end
 end
 
