@@ -30,8 +30,8 @@ describe('#anagram_detector') do
         expect(word.anagram_detector(word2)).to(eq(true))
     end
     it('will detect whether the inputs are words') do
-        word = Word.new('ymy')
+        word = Word.new('mjk')
         word2 = "hello"
-        expect(word.anagram_detector(word2)).to(eq(false))
+        expect(word.vowel_check(word2)).to(eq(false))
     end
 end
