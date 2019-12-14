@@ -34,11 +34,11 @@ describe('#anagram_detector') do
     #     word2 = "EAT"
     #     expect(word.anagram_detector(word2)).to(eq("Anagram match!"))
     # end
-    it('will create a new hash based on letter occurence') do
-        word = Word.new('tEa')
-        arr = ['t', 'e', 'a']
-        expect(word.antigrams_hash(arr)).to(eq({"t"=>1, "e"=>1, "a"=>1}))
-    end
+    # it('will create a new hash based on letter occurence') do
+    #     word = Word.new('tEa')
+    #     arr = ['t', 'e', 'a']
+    #     expect(word.antigrams_hash(arr)).to(eq({"t"=>1, "e"=>1, "a"=>1}))
+    # end #This function no longer exists as it's own method
     it('will detect whether or not words are antigrams') do
         word = Word.new('hi')
         word2 = 'bye'
