@@ -50,7 +50,7 @@ class Word
     word2 = word2.downcase().gsub(@special_char, "").split('').sort().join('')
     if matching_char.empty? != true && @word != word2
       "There are matching characters, but this isn't an anagram!"
-    elsif matching_char.empty? != true && @word == word2
+    elsif @word == word2
       "Anagram!"
     else
       "No matching characters- this is an antigram!"
