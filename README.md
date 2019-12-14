@@ -10,7 +10,7 @@ Anagram Detector is a program that will determine whether or not the two words t
 
 #### Zip:
 
-1. Click [here](https://github.com/exampleUsername/example-project-title.git) to go to the repository location where you will find the clone/download menu.
+1. Click [here](https://github.com/sanchito59/anagrams_antigrams.git) to go to the repository location where you will find the clone/download menu.
 
  2. Navigate to the directory (folder) that contains your browser's downloads.
  3. Double-click on **Anagram Detector** directory (folder).
@@ -20,7 +20,7 @@ Anagram Detector is a program that will determine whether or not the two words t
 
 #### Clone: 
 
- 1. To clone the repository, from your terminal or command line enter: "git clone  https://github.com/exampleUsername/example-project-title.git"
+ 1. To clone the repository, from your terminal or command line enter: "git clone  https://github.com/sanchito59/anagrams_antigrams.git"
  2. Once the repository finishes downloading you will need to navigate to it in the terminal/command line.
  5. With NPM and Ruby 2.5.1 installed, and within the folder, run `bundle install`.
  6. Finally, run `ruby script.rb` to use **Anagram Detector**.
