@@ -40,17 +40,12 @@ class Word
         "That wasn't a word!"
       end
    end
-   
-   def antigrams_hash(arr)
-    hash = Hash.new(0)
-    arr.each_with_object(Hash.new(0)){|key, hash| hash[key] += 1}
-   end
-
+  
   def anagram_detector(word2)
     anti1 = @word.split('')
     anti2 = word2.downcase().gsub(@special_char, "").split('')
-    word1_keys = antigrams_hash(anti1).keys()
-    word2_keys = antigrams_hash(anti2).keys()
+    word1_keys = anti1.each_with_object(Hash.new(0)){|key, hash| hash[key] += 1}.keys()
+    word2_keys = anti2.each_with_object(Hash.new(0)){|key, hash| hash[key] += 1}.keys()
     matching_char = word1_keys & word2_keys
     word2 = word2.downcase().gsub(@special_char, "").split('').sort().join('')
     if matching_char.empty? != true && @word != word2
