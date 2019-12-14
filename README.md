@@ -1,8 +1,8 @@
-# Project Title
+# Anagram Detector
 
-## By **Developer**
+## By **Chris Sanchez**
 
-This application is/will...
+Anagram Detector is a program that will determine whether or not the two words the user inputted are anagrams. It was written in Ruby employing the practices of Behavior Driven Development, and programmed with the Test Driven Development's Red-Green-Refactor methodology in mind.
 - - - -
 ### Setup/Installation Requirements
 
@@ -13,30 +13,17 @@ This application is/will...
 1. Click [here](https://github.com/exampleUsername/example-project-title.git) to go to the repository location where you will find the clone/download menu.
 
  2. Navigate to the directory (folder) that contains your browser's downloads.
- 3. Double-click on **Project Title** directory (folder).
+ 3. Double-click on **Anagram Detector** directory (folder).
  4. Open directory contents by extracting/unzipping documents from folder.
- 5. Run index.html.
+ 5. In the terminal/command line, and with NPM and Ruby 2.5.1 installed, and within the folder, run `bundle install`.
+ 6. Finally, run `ruby script.rb` to use **Anagram Detector**.
 
 #### Clone: 
 
  1. To clone the repository, from your terminal or command line enter: "git clone  https://github.com/exampleUsername/example-project-title.git"
- 2. Once the repository finishes downloading you will need to install the packaged modules.
-
-#### Install:
-In order to use **Project Title** you will need to install the dependenices required to run it. Once you have cloned or zipped the file from Github, in your terminal or command line do the following: 
-
-from _C:\Users\exampleUser\exampleCloneLocation\example-project-title>_  
-1. npm install
-2. npm run build
-
-Step 1 will install all of the dependencies used to develop **Project Title**.  
-Step 2 will build the project, performing any necessary building/prep tasks.
-
-**_If you are using Mac OS, you must change:_** 
-
-_"'start': 'npm run build & webpack-dev-server --open --mode development',"_  
-**_to_**  
-_"'start': 'npm run build; webpack-dev-server --open --mode development',"_
+ 2. Once the repository finishes downloading you will need to navigate to it in the terminal/command line.
+ 5. With NPM and Ruby 2.5.1 installed, and within the folder, run `bundle install`.
+ 6. Finally, run `ruby script.rb` to use **Anagram Detector**.
 
 - - - -
 
@@ -59,7 +46,7 @@ _"'start': 'npm run build; webpack-dev-server --open --mode development',"_
 - - - -
 ### Support and Contact
 
-If you run into any issues running **Project Title**, please contact **Developer**.
+If you run into any issues running **Anagram Detector**, please contact **Chris Sanchez**.
 
 ### License
 
@@ -69,4 +56,4 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Copyright (c) 2019 **Developer**
+Copyright (c) 2019 **Chris Sanchez**
