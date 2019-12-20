@@ -2,7 +2,7 @@
 
 ## By **Chris Sanchez**
 
-Anagram Detector is a program that will determine whether or not the two words the user inputted are anagrams. It was written in Ruby employing the practices of Behavior Driven Development, and programmed with the Test Driven Development's Red-Green-Refactor methodology in mind.
+Anagram Detector is a program that will determine whether or not the two words the user inputted are anagrams. It was written in Ruby employing the practices of Test Driven Development's Red-Green-Refactor methodology in mind.
 - - - -
 ### Setup/Installation Requirements
 
@@ -40,7 +40,8 @@ Anagram Detector is a program that will determine whether or not the two words t
 
 ### Technologies Used
 
- - Ruby/Rails
+ - Ruby
+ - Sinatra
  - Test Driven Development
 
 - - - -
