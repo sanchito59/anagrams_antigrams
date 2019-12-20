@@ -1,4 +1,5 @@
 class Word
+  attr_accessor :str
   def initialize(str)
     @special_char = /[!@#$%^&*()_+?<>"':{}|\~` ]/
     @word = str.downcase().gsub(@special_char, "").split('').sort().join('')
@@ -11,20 +12,24 @@ class Word
       'y' => /[y]/
     }
   end
+
+  def rearranged_input
+    @word
+  end
   
     def vowel_check(word2)
       word1 = @word.split('')
       word2 = word2.split('')
-      counter = 0 
+      counter1 = 0 
       counter2 = 0 
       word1.each do |letter |
         @vowels.each do |key, value|
           if letter =~ value
-            counter +=1
+            counter1 +=1
           end
         end
       end
-      counter
+      counter1
       word2.each do |letter |
         @vowels.each do |key, value|
           if letter =~ value
@@ -33,7 +38,7 @@ class Word
         end
       end
       counter2
-      if counter > 0 && counter2 > 0
+      if counter1 > 0 && counter2 > 0
         word2 = word2.sort().join('')
         anagram_detector(word2)
       else
