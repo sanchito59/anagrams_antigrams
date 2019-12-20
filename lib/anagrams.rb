@@ -1,5 +1,4 @@
 class Word
-  attr_accessor :str
   def initialize(str)
     @special_char = /[!@#$%^&*()_+?<>"':{}|\~` ]/
     @word = str.downcase().gsub(@special_char, "").split('').sort().join('')
