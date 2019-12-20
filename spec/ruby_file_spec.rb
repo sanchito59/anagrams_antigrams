@@ -2,7 +2,7 @@ require('rspec')
 require('pry')
 require('anagrams')
 
-describe('#anagram_detector') do
+describe('#rearranged_input') do
     it('will return a rearranged string value') do
         word = Word.new('test')
         word2 = Word.new('pizza party')
